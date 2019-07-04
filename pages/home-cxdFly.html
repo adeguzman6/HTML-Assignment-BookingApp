@@ -1,0 +1,213 @@
+<!doctype html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    	<title>CXDFLY - Home</title>
+
+		<!-- plugin CSS -->
+		<link href="../plugin/bootstrap-4.3/css/bootstrap.css" rel="stylesheet">
+		<link href="../plugin/fontawesome-free-5.9.0-web/css/all.css" rel="stylesheet">
+
+		<!-- custom CSS-->
+		<link href="../styles/default.css" rel="stylesheet">
+		<link href="../styles/home.css" rel="stylesheet">
+    </head>
+
+	<body>
+		<!--Main Nav-->
+		<header>
+			<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+			    <a class="navbar-brand" href="#">CXDFLY</a>
+			    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+			        <span class="navbar-toggler-icon"></span>
+			    </button>
+			    <div class="navbar-collapse collapse" id="navbarCollapse" style="">
+			        <ul class="navbar-nav mr-auto">
+			            <li class="nav-item active">
+			                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+			            </li>
+			            <li class="nav-item">
+			                <a class="nav-link" href="#">Flight Management</a>
+			            </li>
+			            <li class="nav-item">
+			                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Transaction History</a>
+			            </li>
+			        </ul>
+			        <ul class="navbar-nav px-3">
+			            <li class="nav-item text-nowrap">
+			                <a class="nav-link" href="login.html">Sign out</a>
+			            </li>
+			        </ul>
+			    </div>
+			</nav>
+		</header>
+
+		<!--Content-->
+		<div class="container">
+			<!-- <div class="row">
+				<div class="card-container-center col-xs-12 col-sm-12 col-md-8 col-lg-8">
+					<div class="card">
+					    <div class="card-body">
+					    	<div class="input-group">
+							    <input type="text" class="form-control" placeholder="Saan ka pupunta gurl?">
+							    <div class="input-group-append">
+							        <span class="input-group-text" id="basic-addon2"><i class="fas fa-search"></i></span>
+							    </div>
+							</div>												        
+					    </div>
+					</div>
+				</div>
+			</div> -->
+
+			<div class="row">
+				<div class="card-container-center col-xs-12 col-sm-12 col-md-8 col-lg-8">
+					<div class="card">
+					    <div class="card-body">
+					    	<div class="row">
+						    	<div class="col-md-6">
+						    		<div class="form-group">
+									    <label for="cmb-flightType">Flight Type</label>
+									    <select class="form-control" id="cmb-flightType" name="FLIGHT_TYPE">
+									        <option>One-way Trip</option>
+									        <option>Round Trip</option>
+									        <option>Multi-way Trip</option>
+									    </select>
+									</div>
+						    	</div>	
+
+						    	<div class="col-md-6">
+						    		<div class="form-group">
+									    <label for="cmb-flightClass">Flight Class</label>
+									    <select class="form-control" id="cmb-flightClass" name="FLIGHT_CLASS">
+									        <option>Economy</option>
+									        <option>Business</option>
+									        <option>First Class</option>
+									    </select>
+									</div>
+						    	</div>	
+					    	</div>
+					        <hr/>
+
+					    	<div class="row">
+					    		<div class="col-md-12">
+					    			<strong>Number of Passengers</strong>
+					    		</div>				
+
+					    		<div class="clearfix"></div>
+
+					    		<div class="col-md-4">					    			
+						    		<div class="form-group">
+									    <div class="form-group">
+										    <label for="txt-adult">Adult</label>
+										    <input type="number" min="0"class="form-control" id="txt-adult" name="INT_ADULT">
+										</div>
+									</div>
+					    		</div>
+
+				    			<div class="col-md-4">
+				    				<div class="form-group">
+				    					<div class="form-group">
+				    						<label for="txt-children">Children</label>
+				    						<input type="number" min="0" class="form-control" id="txt-adult" name="INT_CHILDREN">
+				    					</div>
+				    				</div>
+			    				</div>	
+
+			    				<div class="col-md-4">
+				    				<div class="form-group">
+				    					<div class="form-group">
+				    						<label for="txt-infant">Infant</label>
+				    						<input type="number" min="0" class="form-control" id="txt-infant" name="INT_INFANT">
+			    						</div>
+			    					</div>
+		    					</div>
+
+		    				</div>								        
+					    </div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="row">
+				<div class="card-container-center col-xs-12 col-sm-12 col-md-8 col-lg-8">
+					<div class="card">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label for="cmb-from">From</label>
+										<select class="form-control" id="cmb-leaving" name="FROM" placeholder="Location">
+									        <option>Select Location</option> 
+									        <option>Singapore Changi Airport</option>
+									        <option>Tokyo Haneda Airport</option>
+									        <option>Incheon Airport</option>
+									        <option>Hamad International Airport</option>
+									        <option>Hong Kong International Airport</option>
+									        <option>Chubu Centrair International Airport</option>
+									        <option>Munich Airport</option>
+									        <option>London Heathrow</option>
+									        <option>Narita International Airport</option>
+									        <option>Zurich Airport</option>
+									    </select>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<label for="cmb-to">To</label>
+										<select class="form-control" id="cmb-leaving" name="TO" placeholder="Location">
+									        <option>Select Location</option> 
+									        <option>Singapore Changi Airport</option>
+									        <option>Tokyo Haneda Airport</option>
+									        <option>Incheon Airport</option>
+									        <option>Hamad International Airport</option>
+									        <option>Hong Kong International Airport</option>
+									        <option>Chubu Centrair International Airport</option>
+									        <option>Munich Airport</option>
+									        <option>London Heathrow</option>
+									        <option>Narita International Airport</option>
+									        <option>Zurich Airport</option>
+									    </select>
+									</div>
+								</div>
+
+								<div class="col-md-6">
+									<div class="form-group">
+										<div class="form-group">
+											<label for="txt-departuredate">Departing Date</label>
+											<input type="date"class="form-control" >
+										</div>
+									</div>
+								</div>
+
+
+								<!-- <div class="col-md-6">
+									<div class="form-group">
+										<div class="form-group">
+											<label for="txt-departuredate">Returning  Date</label>
+											<input type="date"class="form-control" >
+										</div>
+									    <a class="btn btn-lg btn-primary btn-block">Search</a>
+									</div>
+								</div> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="card-container-center col-xs-12 col-sm-12 col-md-8">
+					<a class="btn btn-lg btn-primary btn-block" href="favailable.html">Search</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
+
+
+
+

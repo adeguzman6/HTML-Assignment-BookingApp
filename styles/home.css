@@ -1,0 +1,11 @@
+.card-container-center{
+  margin: 20px auto 0;
+}
+
+body {
+  background-image: url("../pages/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top left;
+  background-size: cover;
+}

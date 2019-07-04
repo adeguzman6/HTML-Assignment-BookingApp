@@ -1,0 +1,101 @@
+
+body{
+	background-color: #ccc;
+}
+.navbar{
+	flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+nav{
+	background-color: gray;
+	height: 100px;
+}
+
+body {
+	background-color: lightgray;
+		background-image: url("../pages/background.jpg");
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: top left;
+		background-size: cover;
+	  
+}
+
+
+#detail>div, .main-container{
+	display: flex;
+	justify-content: space-between;
+}
+
+/* .table-container {
+	width: 400px;
+} */
+#detail {
+	 padding-top: 50px;
+}
+.main-container,.payment-container,.payment-container>div {
+	display: flex;
+}
+.main-container{
+	padding: 30px;
+}
+.payment-container {
+	flex-direction: column;
+	width: 35%;
+	height: 35%;
+	min-width: 230px;
+	border-radius: 5px;
+	padding: 10px;
+	background-color: #fff;
+	word-wrap: break-word;
+	display: inline;
+}
+
+.payment-line{
+	
+}
+
+.payment-container>div {
+	justify-content: space-between;
+}
+
+.payment-container>div:last-child {
+	justify-content: flex-end;
+}
+
+.flight-container{
+	width: 60%;
+	border-radius: 5px;
+}
+
+.box-line{
+	border-top:3px solid #000; 
+	padding: 10px 0;
+}
+
+.box-line p{
+	margin: 0;
+}
+
+.box-line p:last-child{
+	margin-left: 10px;
+}
+#tbl-pay tr td{
+	min-width: 133px;
+}
+
+.btn-pay{
+	width: 100px;
+}
+.btn-align{
+	text-align: center;
+	margin-top: 40px;
+}
+
+.person{
+
+	display: block
+}

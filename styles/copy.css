@@ -1,0 +1,13 @@
+body {
+    background-image: url("../pages/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top left;
+    background-size: cover;
+  }
+
+  .copy{
+    max-width: 500px;
+    margin: auto;
+    padding: 10px;
+  }
